@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_design"
+    android:orientation="vertical"
+    android:padding="18dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="150dp"
+        app:cardBackgroundColor="@color/Blue"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:id="@+id/profile_img"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user"
+            />
+<!--        <ImageView-->
+<!--            android:id="@+id/profileImg"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/img"-->
+<!--            android:layout_alignParentRight="true"/>-->
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/profName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rupali jadhav"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/prodId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="androidintern2@twtech.in"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

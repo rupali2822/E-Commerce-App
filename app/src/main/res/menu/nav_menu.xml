@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/addNewProduct"
+            android:icon="@drawable/ic_home"
+            android:title="Add new Product" />
+        <item
+            android:id="@+id/Dashbord"
+            android:icon="@drawable/ic_dashboard"
+            android:title="DashBoard" />
+        <item
+            android:id="@+id/login"
+            android:icon="@drawable/ic_dataentry"
+            android:title="Login"/>
+<!--        <item-->
+<!--            android:id="@+id/Report"-->
+<!--            android:icon="@drawable/ic_report_png"-->
+<!--            android:title="Report"/>-->
+<!--        <item-->
+<!--            android:id="@+id/veh_intimation"-->
+<!--            android:icon="@drawable/ic_intimation"-->
+<!--            android:title="Vehicle Intimation" />-->
+<!--        <item-->
+<!--            android:id="@+id/RegisterCom"-->
+<!--            android:icon="@drawable/ic_register_com"-->
+<!--            android:title="Register Complaint"/>-->
+<!--        <item-->
+<!--            android:id="@+id/ServiceReq"-->
+<!--            android:icon="@drawable/ic_service_req"-->
+<!--            android:title="Service Request"/>-->
+<!--        <item-->
+<!--            android:id="@+id/notWorking"-->
+<!--            android:icon="@drawable/ic_notworking"-->
+<!--            android:title="Device Not Working"/>-->
+<!--        <item-->
+<!--            android:id="@+id/id_dr_setting"-->
+<!--            android:icon="@drawable/ic_call"-->
+<!--            android:title="Call to Driver" />-->
+<!--        <item-->
+<!--            android:id="@+id/rsm"-->
+<!--            android:icon="@drawable/ic_call"-->
+<!--            android:title="Call to RSM"/>-->
+
+<!--        <item-->
+<!--            android:id="@+id/Alerts"-->
+<!--            android:icon="@drawable/ic_alerts"-->
+<!--            android:title="Alerts"/>-->
+<!--        <item-->
+<!--            android:id="@+id/Odometer"-->
+<!--            android:icon="@drawable/ic_odometer"-->
+<!--            android:title="Odometer Reading"/>-->
+<!--        <item-->
+<!--            android:id="@+id/Violation"-->
+<!--            android:icon="@drawable/ic_violation"-->
+<!--            android:title="Violations"/>-->
+
+<!--        <item-->
+<!--            android:id="@+id/Logout"-->
+<!--            android:icon="@drawable/ic_logout"-->
+<!--            android:title="Logout"/>-->
+
+
+    </group>
+</menu>

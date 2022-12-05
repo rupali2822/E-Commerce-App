@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/drawer_layout"
+    >
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/main_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/Blue"
+                android:layout_gravity="center_vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:gravity="end"
+                    android:layout_marginRight="15dp">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="start"
+                        android:src="@drawable/ic_baseline_shopping_cart_24"
+                        />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="E Shopping "
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_marginRight="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="start"
+                        android:textSize="20dp"/>
+
+                    <ImageView
+                        android:id="@+id/logout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".2"
+                        android:src="@drawable/ic_baseline_logout_24"/>
+
+<!--               <include layout="@layout/bell"-->
+<!--                   android:layout_width="0dp"-->
+<!--                   android:layout_height="wrap_content"-->
+<!--                   android:layout_gravity="center_vertical"-->
+<!--                   android:layout_weight=".2"-->
+
+<!--                   />-->
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?actionBarSize"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/framelayout"/>
+
+
+            </LinearLayout>
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_below="@+id/ll1"
+                    android:id="@+id/bottom_nav_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:menu="@menu/bottom_nav_menu"
+                     android:layout_margin="2dp"
+                    android:layout_gravity="bottom"/>
+
+        </RelativeLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start"
+
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>
